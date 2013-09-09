@@ -1,5 +1,5 @@
 /*! horunge - v1.0 - 2013-09-09
-* https://github.com/davidpaulsson/horunge
+* https://github.com/davidpaulsson/Horunge.js
 * Copyright (c) 2013 David Paulsson; Licensed WTFPL */
 (function ($) {
 

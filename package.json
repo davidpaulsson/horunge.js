@@ -5,7 +5,7 @@
   "keywords": [
     "jquery-plugin"
   ],
-  "homepage": "https://github.com/davidpaulsson/horunge",
+  "homepage": "https://github.com/davidpaulsson/Horunge.js",
   "author": {
     "name": "David Paulsson",
     "email": "david@davidpaulsson.se",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/davidpaulsson/horunge.git"
+    "url": "https://github.com/davidpaulsson/horunge.js.git"
   },
   "licenses": [
     {

@@ -15,7 +15,7 @@ In your web page:
 
 ```html
 <script src="jquery.js"></script>
-<script src="dist/horunge.min.js"></script>
+<script src="dist/jquery.horunge.min.js"></script>
 <script>
 jQuery(function($) {
   $.horunge();
