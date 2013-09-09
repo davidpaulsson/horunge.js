@@ -1,0 +1,8 @@
+{
+  "name": "horunge",
+  "version": "1.0",
+  "dependencies": {},
+  "devDependencies": {
+    "jquery": "latest"
+  }
+}

@@ -1,0 +1,44 @@
+# Horunge.js
+
+Easily prevent typographic widows. Note that this could be quite heavy, so use it on headings only. I don’t recommend to set it to scan your entire body.
+
+Horunge is the Swedish equivalent for widows when we’re talking typography. But literary it translates to _whore's kid_.
+
+## Getting Started
+
+Download the [production version][min] or the [development version][max].
+
+[min]: https://raw.github.com/davidpaulsson/jquery-horunge/master/dist/jquery.horunge.min.js
+[max]: https://raw.github.com/davidpaulsson/jquery-horunge/master/dist/jquery.horunge.js
+
+In your web page:
+
+```html
+<script src="jquery.js"></script>
+<script src="dist/horunge.min.js"></script>
+<script>
+jQuery(function($) {
+  $.horunge();
+});
+</script>
+```
+
+## Documentation
+`_(Nothing yet)_`
+
+## Examples
+See under `/demo/` and view source to see how the headlines code have been altered.
+
+## Release History
+* 1.0 - First release.
+
+## Roadmap
+I do plan some minor updates. 
+
+* Write better qUnit tests (part learning, part test of features).
+* Make it run only if the last word is under a set amount of letters. In Swedish, for example, we can have quite long words and it would be unnecessary to fix line breaks for those.
+
+## Notes
+This small jQuery plugin built purely for my own education purposes. If you were to use it in a production envierment, please [tweet me](http://twitter.com/davidpaulsson/) and say so.
+
+Inspired by [Chris Coyer’s post on CSS Tricks](css-tricks.com/preventing-widows-in-post-titles/).
