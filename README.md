@@ -8,8 +8,8 @@ Horunge is the Swedish equivalent for widows when we’re talking typography. Bu
 
 Download the [production version][min] or the [development version][max].
 
-[min]: https://raw.github.com/davidpaulsson/jquery-horunge/master/dist/jquery.horunge.min.js
-[max]: https://raw.github.com/davidpaulsson/jquery-horunge/master/dist/jquery.horunge.js
+[min]: https://raw.github.com/davidpaulsson/Horunge.js/master/dist/jquery.horunge.min.js
+[max]: https://raw.github.com/davidpaulsson/Horunge.js/master/dist/jquery.horunge.js
 
 In your web page:
 
