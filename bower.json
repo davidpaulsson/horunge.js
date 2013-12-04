@@ -1,8 +1,10 @@
 {
-  "name": "horunge",
-  "version": "1.0",
-  "dependencies": {},
-  "devDependencies": {
-    "jquery": "latest"
-  }
+	"name": "horunge",
+	"version": "1.0.0",
+	"main": "dist/jquery.horunge.js",
+	"description": "Prevent typographic orphans."
+	"repository": { 
+		"type": "git", 
+		"url": "git://github.com:davidpaulsson/Horunge.js.git"
+	}
 }

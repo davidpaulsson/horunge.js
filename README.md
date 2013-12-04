@@ -1,8 +1,8 @@
 # Horunge.js
 
-Easily prevent typographic widows. Note that this could be quite heavy, so use it on headings only. I don’t recommend to set it to scan your entire body.
+Easily prevent typographic orphans. Note that this could be quite heavy, so use it on headings only. I don’t recommend to set it to scan your entire body.
 
-Horunge is the Swedish equivalent for widows when we’re talking typography. But literary it translates to _whore's kid_.
+Horunge is the Swedish equivalent for orphans when we’re talking typography.
 
 ## Getting Started
 
