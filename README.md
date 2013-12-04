@@ -30,7 +30,7 @@ jQuery(function($) {
 See under `/demo/` and view source to see how the headlines code have been altered.
 
 ## Release History
-* 1.0 - First release.
+* 0.9.0 - First release.
 
 ## Roadmap
 I do plan some minor updates. 
