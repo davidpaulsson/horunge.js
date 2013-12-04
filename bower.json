@@ -1,8 +1,0 @@
-{
-	"name": "horunge",
-	"version": "1.0.0",
-	"main": "dist/jquery.horunge.js",
-	"description": "Prevent typographic orphans."
-	"repository": "git://github.com:davidpaulsson/Horunge.js.git",
-	"homepage": "https://github.com/davidpaulsson/Horunge.js",
-}

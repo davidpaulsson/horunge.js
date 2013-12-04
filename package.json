@@ -1,15 +1,17 @@
 {
   "name": "horunge",
-  "version": "1.0",
-  "description": "Horunge.js",
+  "version": "1.0.0",
+  "description": "Prevent typographic orphans.",
   "keywords": [
-    "jquery-plugin"
+    "typography",
+    "orphan",
+    "jquery"
   ],
   "homepage": "https://github.com/davidpaulsson/Horunge.js",
   "author": {
     "name": "David Paulsson",
     "email": "david@davidpaulsson.se",
-    "url": "https://github.com/davidpaulsson"
+    "url": "http://davidpaulsson.se"
   },
   "repository": {
     "type": "git",
@@ -22,7 +24,7 @@
   ],
   "devDependencies": {
     "grunt-contrib-jshint": "~0.1.1",
-    "grunt-contrib-qunit": "~0.1.1",
+    // "grunt-contrib-qunit": "~0.1.1",
     "grunt-contrib-concat": "~0.1.2",
     "grunt-contrib-uglify": "~0.1.1",
     "grunt-contrib-watch": "~0.2.0",
