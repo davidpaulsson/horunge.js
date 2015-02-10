@@ -1,11 +1,14 @@
-/*! horunge - v1.0 - 2013-09-09
-* https://github.com/davidpaulsson/Horunge.js
-* Copyright (c) 2013 David Paulsson; Licensed WTFPL */
+/*! 
+ * Horunge.js v0.0.2 - 2015-02-10
+ * https://github.com/davidpaulsson/horunge.js 
+ * Licensed WTFPL 
+ */ 
 (function ($) {
+  'use strict';
 
   // Collection method.
   $.fn.horunge = function (options) {
-    
+
     // Default options
     var settings = $.extend({
       words: 2
@@ -15,16 +18,16 @@
     return this.each(function() {
 
       // Split the title into an array of words
-      var wordArray = $(this).text().split(" ");
-    
+      var wordArray = $(this).text().split(' ');
+
       // Only run if there's more than one word
-      if (wordArray.length > 1) {
+      if (wordArray.length > 2) {
 
         // Get last two words (default) of wordArray and join with non breaking space
-        var preventWidows = wordArray.slice(-settings.words).join("&nbsp;");
+        var preventWidows = wordArray.slice(-settings.words).join('&nbsp;');
 
         // Join the non breaking space string with the wordArray (again)
-        wordArray[wordArray.length-(settings.words+1)] += " " + preventWidows;
+        wordArray[wordArray.length-(settings.words+1)] += ' ' + preventWidows;
 
         // Remove the last items of the array (now redundant)
         var wordsToPop = 0;
@@ -34,7 +37,7 @@
         }
 
         // Replace the title with the array joined back together with spaces
-        $(this).html(wordArray.join(" "));
+        $(this).html(wordArray.join(' '));
       }
     });
   };

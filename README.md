@@ -1,44 +1,44 @@
 # Horunge.js
 
-Easily prevent typographic orphans. Note that this could be quite heavy, so use it on headings only. I don’t recommend to set it to scan your entire body.
+Easily prevent typographic orphans.
+
+![](https://raw.github.com/davidpaulsson/horunge.js/master/horunge.gif)
 
 Horunge is the Swedish equivalent for orphans when we’re talking typography.
 
-## Getting Started
+## Install
 
-Download the [production version][min] or the [development version][max].
+### Bower
 
-[min]: https://raw.github.com/davidpaulsson/Horunge.js/master/dist/jquery.horunge.min.js
-[max]: https://raw.github.com/davidpaulsson/Horunge.js/master/dist/jquery.horunge.js
+`bower install jquery-horunge`
+
+### Manual install
+
+Download the [production version][min] (409 B minified, 302 B with gzip) or the [development version][max].
+
+[min]: https://raw.github.com/davidpaulsson/horunge.js/master/dist/jquery.horunge.min.js
+[max]: https://raw.github.com/davidpaulsson/horunge.js/master/dist/jquery.horunge.js
+
+## Usage
 
 In your web page:
 
 ```html
+<h1>This is a sample heading</h1>
+
 <script src="jquery.js"></script>
-<script src="dist/jquery.horunge.min.js"></script>
+<script src="jquery.horunge.min.js"></script>
 <script>
-jQuery(function($) {
-  $.horunge();
+$(function() {
+  $('h1').horunge();
 });
 </script>
 ```
 
-## Documentation
-`_(Nothing yet)_`
+### Release history
 
-## Examples
-See under `/demo/` and view source to see how the headlines code have been altered.
-
-## Release History
-* 0.9.0 - First release.
-
-## Roadmap
-I do plan some minor updates. 
-
-* Write better qUnit tests (part learning, part test of features).
-* Make it run only if the last word is under a set amount of letters. In Swedish, for example, we can have quite long words and it would be unnecessary to fix line breaks for those.
-
-## Notes
-This small jQuery plugin built purely for my own education purposes. If you were to use it in a production envierment, please [tweet me](http://twitter.com/davidpaulsson/) and say so.
-
-Inspired by [Chris Coyer’s post on CSS Tricks](css-tricks.com/preventing-widows-in-post-titles/).
+- 0.0.2 - Feb 10, 2015
+- - Wrote tests
+- - Fixed an issue where Horunge is applied to a paragraph with only 2 words, it removes the words from the page
+- 0.0.1 - Mar 19, 2014
+- - First release
