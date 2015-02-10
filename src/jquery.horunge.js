@@ -40,11 +40,7 @@
         wordArray[wordArray.length-(settings.words+1)] += ' ' + preventWidows;
 
         // Remove the last items of the array (now redundant)
-        var wordsToPop = 0;
-        while ( wordsToPop < settings.words ) {
-          wordArray.pop();
-          wordsToPop++;
-        }
+        wordArray = wordArray.slice(0,wordArray.length-settings.words);
 
         // Replace the title with the array joined back together with spaces
         $(this).html(wordArray.join(' '));
