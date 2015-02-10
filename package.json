@@ -1,8 +1,8 @@
 {
   "name": "Horunge.js",
   "version": "0.0.2",
-  "main": "dist/horunge.min.js",
-  "description": "Prevent typographic orphans.",
+  "main": "dist/jquery.horunge.min.js",
+  "description": "Prevent typographic orphans",
   "keywords": [
     "typography",
     "orphan",

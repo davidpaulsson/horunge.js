@@ -1,0 +1,23 @@
+{
+  "name": "jquery-horunge",
+  "version": "0.0.2",
+  "homepage": "https://github.com/davidpaulsson/horunge.js",
+  "authors": [
+    "David Paulsson <david@davidpaulsson.se>"
+  ],
+  "description": "Easily prevent typographic orphans",
+  "main": "dist/jquery.horunge.min.js",
+  "keywords": [
+    "typography",
+    "orphan",
+    "jquery"
+  ],
+  "license": "WTFPL",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
