@@ -27,7 +27,7 @@ In your web page:
 <h1>This is a sample heading</h1>
 
 <script src="jquery.js"></script>
-<script src="jquery.horunge.min.js"></script>
+<script src="bower_components/jquery-horunge/dist/jquery.horunge.min.js"></script>
 <script>
 $(function() {
   $('h1').horunge();
