@@ -1,9 +1,23 @@
 /*! 
- * Horunge.js v0.0.2 - 2015-02-10
+ * jquery-horunge v0.0.3 - 2015-02-10
  * https://github.com/davidpaulsson/horunge.js 
  * Licensed WTFPL 
  */ 
-(function ($) {
+/* global module */
+/* global require */
+/* global jQuery */
+(function (factory) {
+  if (typeof define === 'function' && define.amd) {
+    // AMD. Register as an anonymous module.
+    define(['jquery'], factory);
+  } else if (typeof exports === 'object') {
+    // Node/CommonJS
+    module.exports = factory(require('jquery'));
+  } else {
+    // Browser globals
+    factory(jQuery);
+  }
+}(function ($) {
   'use strict';
 
   // Collection method.
@@ -41,5 +55,4 @@
       }
     });
   };
-
-}(jQuery));
+}));

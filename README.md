@@ -4,7 +4,7 @@ Easily prevent typographic orphans.
 
 ![](https://raw.github.com/davidpaulsson/horunge.js/master/horunge.gif)
 
-Horunge is the Swedish equivalent for orphans when we’re talking typography.
+Horunge is the Swedish equivalent for orphans when we’re talking typography. Supports CommonJS, AMD or browser globals.
 
 ## Install
 
@@ -45,6 +45,8 @@ $.horunge({
 
 #### Release history
 
+- 0.0.3 - Feb 10, 2015
+- - Support CommonJS, AMD or browser globals
 - 0.0.2 - Feb 10, 2015
 - - Wrote tests
 - - Fixed an issue where Horunge is applied to a paragraph with only 2 words, it removes the words from the page
