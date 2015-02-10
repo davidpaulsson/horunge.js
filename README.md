@@ -35,7 +35,15 @@ $(function() {
 </script>
 ```
 
-### Release history
+### Options
+
+```js
+$.horunge({
+  words: 2 // number of words to always keep at new line. default "2"
+});
+```
+
+#### Release history
 
 - 0.0.2 - Feb 10, 2015
 - - Wrote tests
