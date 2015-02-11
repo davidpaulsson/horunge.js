@@ -1,6 +1,6 @@
 {
   "name": "jquery-horunge",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "dist/jquery.horunge.min.js",
   "description": "Prevent typographic orphans",
   "keywords": [

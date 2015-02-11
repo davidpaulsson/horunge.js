@@ -45,6 +45,9 @@ $.horunge({
 
 #### Release history
 
+- 0.0.6 - Feb 11, 2015
+- - Removed unwanted whitespaces (Thanks @remipou)
+- - Tests
 - 0.0.5 - Feb 11, 2015
 - - Using splice (Thanks @rrostt)
 - 0.0.4 - Feb 10, 2015
@@ -52,7 +55,7 @@ $.horunge({
 - 0.0.3 - Feb 10, 2015
 - - Support CommonJS, AMD or browser globals
 - 0.0.2 - Feb 10, 2015
-- - Wrote tests
 - - Fixed an issue where Horunge is applied to a paragraph with only 2 words, it removes the words from the page
+- - Tests
 - 0.0.1 - Mar 19, 2014
 - - First release

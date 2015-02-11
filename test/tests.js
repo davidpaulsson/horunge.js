@@ -132,3 +132,19 @@ QUnit.test( 'horunge works with a long paragraph', function(assert) {
   // see that str is intact
   assert.ok( str == 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur unde blanditiis laudantium, inventore repudiandae dicta porro ullam? Consectetur, culpa nemo voluptatum sunt atque harum nam mollitia libero, optio vero,&nbsp;id.' );
 });
+
+/**
+ * make sure there's no white space in the beginning or after string
+ */
+QUnit.test( 'horunge strips white space in the beginning and end', function(assert) {
+  'use strict';
+
+  // add some text
+  $('h1').text('       Lorem ipsum dolor      ');
+
+  // get innerHTML
+  var str = $('h1').horunge()[0].innerHTML;
+
+  // see that str is correct
+  assert.ok( str == 'Lorem ipsum&nbsp;dolor' );
+});
