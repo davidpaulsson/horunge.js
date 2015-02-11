@@ -23,20 +23,25 @@
     // Run on each
     return this.each(function() {
 
-      // Split the title into an array of words
-      var wordArray = $.trim($(this).text()).split(' ');
+      // Get the text and split into an array of words
+      var text = this.textContent || this.innerText;
+      var wordArray = $.trim().split(' ');
 
       // Only run if there's more than one word
       if (wordArray.length > 2) {
 
-        // Join (settings.words) words with &nbsp
-        var lastWords = wordArray.slice(-settings.words).join('&nbsp');
+        // Get the last words by settings.words
+        var lastWords = wordArray.splice(-settings.words);
+        
+        // Build a new string replacing the last words with \u00A0 (&nbsp) as space
+        var newText = text.replace(lastWords.join(' '), lastWords.join('\u00A0'));
 
-        // Remove (wordArray.length - settings.words) elements from index (settings.words), and inserts (lastWords)
-        wordArray.splice(wordArray.length-settings.words, settings.words, lastWords);
-
-        // Replace DOM with new string
-        $(this).html(wordArray.join(' '));
+        // Empty the container
+        while (this.firstChild) {
+            this.removeChild(this.firstChild);
+        }
+        // Append the new string
+        this.appendChild(document.createTextNode(newText));
       }
     });
   };
