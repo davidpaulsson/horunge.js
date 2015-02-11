@@ -33,16 +33,9 @@
       // Only run if there's more than one word
       if (wordArray.length > 2) {
 
-        // Get last two words (default) of wordArray and join with non breaking space
-        var preventWidows = wordArray.slice(-settings.words).join('&nbsp;');
+        var lastWords = wordArray.slice(-settings.words).join('&nbsp');
+        wordArray.splice(wordArray.length-settings.words, settings.words, lastWords);
 
-        // Join the non breaking space string with the wordArray (again)
-        wordArray[wordArray.length-(settings.words+1)] += ' ' + preventWidows;
-
-        // Remove the last items of the array (now redundant)
-        wordArray = wordArray.slice(0,wordArray.length-settings.words);
-
-        // Replace the title with the array joined back together with spaces
         $(this).html(wordArray.join(' '));
       }
     });
