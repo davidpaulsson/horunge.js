@@ -1,5 +1,5 @@
 /*! 
- * jquery-horunge v0.0.5 - 2015-02-11
+ * jquery-horunge v0.0.6 - 2015-02-11
  * https://github.com/davidpaulsson/horunge.js 
  * Licensed WTFPL 
  */ 
@@ -29,7 +29,7 @@
     return this.each(function() {
 
       // Split the title into an array of words
-      var wordArray = $(this).text().split(' ');
+      var wordArray = $.trim($(this).text()).split(' ');
 
       // Only run if there's more than one word
       if (wordArray.length > 2) {
