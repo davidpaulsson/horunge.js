@@ -1,10 +1,6 @@
-/* global define */
-/* global module */
-/* global require */
-/* global jQuery */
 (function (factory) {
   if (typeof define === 'function' && define.amd) {
-    // AMD. Register as an anonymous module.
+    // AMD. Register as an anonymous module
     define(['jquery'], factory);
   } else if (typeof exports === 'object') {
     // Node/CommonJS
@@ -16,7 +12,7 @@
 }(function ($) {
   'use strict';
 
-  // Collection method.
+  // Collection method
   $.fn.horunge = function (options) {
 
     // Default options
@@ -33,9 +29,13 @@
       // Only run if there's more than one word
       if (wordArray.length > 2) {
 
+        // Join (settings.words) words with &nbsp
         var lastWords = wordArray.slice(-settings.words).join('&nbsp');
+
+        // Remove (wordArray.length - settings.words) elements from index (settings.words), and inserts (lastWords)
         wordArray.splice(wordArray.length-settings.words, settings.words, lastWords);
 
+        // Replace DOM with new string
         $(this).html(wordArray.join(' '));
       }
     });

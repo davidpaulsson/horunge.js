@@ -1,14 +1,11 @@
 /*! 
- * jquery-horunge v0.0.4 - 2015-02-10
+ * jquery-horunge v0.0.5 - 2015-02-11
  * https://github.com/davidpaulsson/horunge.js 
  * Licensed WTFPL 
  */ 
-/* global module */
-/* global require */
-/* global jQuery */
 (function (factory) {
   if (typeof define === 'function' && define.amd) {
-    // AMD. Register as an anonymous module.
+    // AMD. Register as an anonymous module
     define(['jquery'], factory);
   } else if (typeof exports === 'object') {
     // Node/CommonJS
@@ -20,7 +17,7 @@
 }(function ($) {
   'use strict';
 
-  // Collection method.
+  // Collection method
   $.fn.horunge = function (options) {
 
     // Default options
@@ -37,16 +34,13 @@
       // Only run if there's more than one word
       if (wordArray.length > 2) {
 
-        // Get last two words (default) of wordArray and join with non breaking space
-        var preventWidows = wordArray.slice(-settings.words).join('&nbsp;');
+        // Join (settings.words) words with &nbsp
+        var lastWords = wordArray.slice(-settings.words).join('&nbsp');
 
-        // Join the non breaking space string with the wordArray (again)
-        wordArray[wordArray.length-(settings.words+1)] += ' ' + preventWidows;
+        // Remove (wordArray.length - settings.words) elements from index (settings.words), and inserts (lastWords)
+        wordArray.splice(wordArray.length-settings.words, settings.words, lastWords);
 
-        // Remove the last items of the array (now redundant)
-        wordArray = wordArray.slice(0,wordArray.length-settings.words);
-
-        // Replace the title with the array joined back together with spaces
+        // Replace DOM with new string
         $(this).html(wordArray.join(' '));
       }
     });
