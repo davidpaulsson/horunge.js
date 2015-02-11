@@ -24,7 +24,7 @@
     return this.each(function() {
 
       // Split the title into an array of words
-      var wordArray = $(this).text().split(' ');
+      var wordArray = $.trim($(this).text()).split(' ');
 
       // Only run if there's more than one word
       if (wordArray.length > 2) {
