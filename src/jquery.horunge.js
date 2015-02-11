@@ -33,8 +33,8 @@
         // Get the last words by settings.words
         var lastWords = wordArray.splice(-settings.words);
         
-        // Build a new string replacing the last words with \u00A0 (&nbsp) as space
-        var newText = text.replace(lastWords.join(' '), lastWords.join('\u00A0'));
+        // Build a new string joining the last words with \u00A0 (&nbsp)
+        var newText = wordArray.join(' ') + ' ' + lastWords.join('\u00A0');
 
         // Empty the container
         while (this.firstChild) {
