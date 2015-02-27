@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/davidpaulsson/horunge.js.svg)](https://travis-ci.org/davidpaulsson/horunge.js)
+
 # Horunge.js
 
 Easily prevent typographic orphans.
