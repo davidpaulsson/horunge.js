@@ -136,7 +136,7 @@ QUnit.test( 'horunge works with a long paragraph', function(assert) {
 /**
  * make sure there's no white space in the beginning or after string
  */
-QUnit.test( 'horunge strips white space in the beginning and end', function(assert) {
+QUnit.test( 'horunge strips white space in the beginning and end of string', function(assert) {
   'use strict';
 
   // add some text
@@ -147,4 +147,20 @@ QUnit.test( 'horunge strips white space in the beginning and end', function(asse
 
   // see that str is correct
   assert.ok( str == 'Lorem ipsum&nbsp;dolor' );
+});
+
+/**
+ * should ignore inner html tags
+ */
+QUnit.test( 'horunge ignores html tags inside heading', function(assert) {
+  'use strict';
+
+  // add some text
+  $('h1').text('Handcrafted <span>dropcaps by</span> the first year students at <abbr>gdk</abbr>');
+
+  // get innerHTML
+  var str = $('h1').horunge()[0].innerHTML;
+
+  // see that str is correct
+  assert.ok( str == 'Handcrafted &lt;span&gt;dropcaps by&lt;/span&gt; the first year students at&nbsp;&lt;abbr&gt;gdk&lt;/abbr&gt;' );
 });
