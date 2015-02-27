@@ -32,8 +32,8 @@
         // Join (settings.words) words with &nbsp
         var lastWords = wordArray.slice(-settings.words).join('&nbsp');
 
-        // Remove (wordArray.length - settings.words) elements from index (settings.words), and inserts (lastWords)
-        wordArray.splice(wordArray.length-settings.words, settings.words, lastWords);
+        // Remove trailing words (settings.words), and inserts (lastWords)
+        wordArray.splice(-settings.words, settings.words, lastWords);
 
         // Replace DOM with new string
         $(this).html(wordArray.join(' '));
