@@ -8,7 +8,7 @@ Horunge is the Swedish equivalent for orphans when we’re talking typography. S
 
 ## Install
 
-### Npm
+### NPM
 
 `npm install horunge`
 
@@ -21,7 +21,9 @@ Download the [production version][min] or the [development version][max].
 
 ## Usage
 
-In your web page:
+Horunge is exposed as a global an UMD module and is available globally or in NodeJS.
+
+Browser globals
 
 ```html
 <h1>This is a sample heading</h1>
@@ -33,6 +35,15 @@ In your web page:
     headline.innerHTML = horunge(headline.innerHTML)
   });
 </script>
+```
+
+CommonJS
+
+```js
+import horunge from 'horunge';
+
+const heading = 'This is a sample heading';
+const fixedHeading = horunge(heading);
 ```
 
 ### Api
