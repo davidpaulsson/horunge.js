@@ -40,7 +40,7 @@ In your web page:
 `horunge(string, [opt = 2]);`
 
 | Param         | Description   |
-| ------------- | -------------:|
+| ------------- | ------------- |
 | string        | String to fix |
 | opt           | Number of words to keep at same row (optional) (default: 2) |
 
