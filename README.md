@@ -8,16 +8,16 @@ Horunge is the Swedish equivalent for orphans when we’re talking typography. S
 
 ## Install
 
-### Bower
+### Npm
 
-`bower install jquery-horunge`
+`npm install horunge`
 
 ### Manual install
 
 Download the [production version][min] or the [development version][max].
 
-[min]: https://raw.github.com/davidpaulsson/horunge.js/master/dist/jquery.horunge.min.js
-[max]: https://raw.github.com/davidpaulsson/horunge.js/master/dist/jquery.horunge.js
+[min]: https://raw.github.com/davidpaulsson/horunge.js/master/dist/horunge.min.js
+[max]: https://raw.github.com/davidpaulsson/horunge.js/master/dist/horunge.js
 
 ## Usage
 
@@ -26,22 +26,21 @@ In your web page:
 ```html
 <h1>This is a sample heading</h1>
 
-<script src="jquery.js"></script>
-<script src="bower_components/jquery-horunge/dist/jquery.horunge.min.js"></script>
+<script src="horunge.min.js"></script>
 <script>
-$(function() {
-  $('h1').horunge();
-});
+  const headlines = document.querySelectorAll("h1")
+  headlines.forEach(function(headline) {
+    headline.innerHTML = horunge(headline.innerHTML)
+  });
 </script>
 ```
 
-### Options
+### Api
 
-```js
-$.horunge({
-  words: 2 // number of words to always keep at new line. default "2"
-});
-```
+`horunge(string, [opt = 2]);`
+
+| string | String to fix
+| opt    | Number of words to keep at same row (optional) (default: 2)
 
 [List of releases](https://github.com/davidpaulsson/horunge.js/releases)
 [List of contributors](https://github.com/davidpaulsson/horunge.js/graphs/contributors)
