@@ -21,8 +21,6 @@ Download the [production version][min] or the [development version][max].
 
 ## Usage
 
-Horunge is exposed as a global an UMD module and is available globally or in NodeJS.
-
 Browser globals
 
 ```html
