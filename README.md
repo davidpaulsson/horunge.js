@@ -39,8 +39,10 @@ In your web page:
 
 `horunge(string, [opt = 2]);`
 
-| string | String to fix
-| opt    | Number of words to keep at same row (optional) (default: 2)
+| Param         | Description   |
+| ------------- | -------------:|
+| string        | String to fix |
+| opt           | Number of words to keep at same row (optional) (default: 2) |
 
 [List of releases](https://github.com/davidpaulsson/horunge.js/releases)
 [List of contributors](https://github.com/davidpaulsson/horunge.js/graphs/contributors)
