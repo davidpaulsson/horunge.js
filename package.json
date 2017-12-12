@@ -1,9 +1,12 @@
 {
   "name": "horunge",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "dist/horunge.js",
   "description": "Prevent typographic orphans",
-  "keywords": ["typography", "orphan"],
+  "keywords": [
+    "typography",
+    "orphan"
+  ],
   "homepage": "https://github.com/davidpaulsson/horunge.js",
   "author": {
     "name": "David Paulsson",
