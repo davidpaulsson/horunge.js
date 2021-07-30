@@ -1,9 +1,7 @@
 # Horunge.js [![Build Status](https://travis-ci.org/davidpaulsson/horunge.js.svg)](https://travis-ci.org/davidpaulsson/horunge.js)
+![][horunge_header]
 
-Easily prevent typographic orphans.
-
-![](https://raw.github.com/davidpaulsson/horunge.js/master/horunge.gif)
-
+Easily prevent typographic orphans. <br><br>
 Horunge is the Swedish equivalent for orphans when we’re talking typography. Supports CommonJS, AMD or browser globals.
 
 ## Install
@@ -55,3 +53,5 @@ const fixedHeading = horunge(heading);
 
 [List of releases](https://github.com/davidpaulsson/horunge.js/releases)
 [List of contributors](https://github.com/davidpaulsson/horunge.js/graphs/contributors)
+
+[horunge_header]: assets/horunge_header.png
